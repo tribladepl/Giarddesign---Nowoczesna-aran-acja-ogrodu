@@ -286,7 +286,7 @@ main {
 }
 .offering--text,
 .company--text {
-  width: 70.1rem;
+  max-width: 70.1rem;
   font-family: Inter;
   font-size: 1.6rem;
   font-style: normal;
