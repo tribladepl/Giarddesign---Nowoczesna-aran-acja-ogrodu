@@ -404,10 +404,10 @@
     justify-content: center;
     align-items: center;
   }
-  .boxx {
-    margin: 2rem;
+ .boxx {
+    margin: 5rem;
     height: auto;
-    width: 70%;
+    width: 60%;
   }
   .icon {
     width: 4rem;
