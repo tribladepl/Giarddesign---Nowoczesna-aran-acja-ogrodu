@@ -1,0 +1,160 @@
+:root {
+  --color-brand--1: #1b5b31;
+  --color-brand--1-2: #21703d;
+  --color-brand--2: #dcc1ab;
+
+  --color-dark--1: #111;
+  --color-light--2: #f5f0ec;
+  --color-light--3: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* 1rem teraz to 10px*/
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+body {
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 150%;
+  font-style: normal;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.btnn:link,
+.btnn:visited {
+  background-color: var(--color-brand--1);
+  color: var(--color-light--2);
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 150%;
+  font-style: normal;
+  font-family: Inter;
+  border-radius: 200px;
+  align-items: center;
+  padding: 12px 24px 14px 24px;
+  transition: all 0.3s;
+}
+.btn--pusty:link,
+.btn--pusty:visited {
+  background-color: var(--color-brand--2);
+  color: var(--color-brand--1);
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 150%;
+  font-style: normal;
+  font-family: Inter;
+  border-radius: 200px;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  border: 1px solid var(--color-brand--1);
+  padding: 12px 22px 14px 22px;
+  transition: all 0.3s;
+}
+.btnn:hover,
+.btnn:active {
+  background-color: var(--color-brand--1-2);
+}
+.btn--pusty:hover,
+.btn--pusty:active {
+  background-color: var(--color-brand--1);
+  color: var(--color-light--2);
+}
+button {
+  border: none;
+}
+.gridd {
+  display: grid;
+  column-gap: 6.2rem;
+  row-gap: 6.2rem;
+}
+.gridd--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.gridd--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.kolumny {
+  justify-items: center;
+  display: flex;
+  gap: 6.4rem;
+}
+.btnn--number--3:link,
+.btnn--number--3:visited {
+  color: var(--color-light--2);
+  font-size: 1.6rem;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid var(--color-light--2);
+  border-radius: 200px;
+  padding: 12px 22px 14px 22px;
+  transition: all 0.3s;
+}
+.btnn--number--3:hover,
+.btnn--number--3:active {
+  color: var(--color-brand--1);
+  background-color: var(--color-light--2);
+}
+.btnn--instagram:link,
+.btnn--instagram:visited {
+  padding: 10px 24px 12px 24px;
+  background: var(--color-light--2);
+  color: var(--color-brand--1);
+  text-decoration: none;
+  border-radius: 200px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+  transition: all 0.3s;
+}
+.btnn--instagram:hover,
+.btnn--instagram:active {
+  background: var(--color-light--3);
+  color: var(--color-brand--1-2);
+  box-shadow: 0 1rem 3rem rgba(255, 255, 255, 0.1);
+}
+.btn--realizacja:link,
+.btn--realizacja:visited {
+  display: block;
+  margin: auto;
+  width: 123px;
+  background-color: none;
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-align: center;
+
+  color: var(--color-dark--1);
+  border-radius: 200px;
+  border: 1px solid var(--color-dark--1);
+  padding: 12px 22px 14px 22px;
+  margin-bottom: 4.4rem;
+  transition: all 0.6s;
+}
+.btn--realizacja:hover,
+.btn--realizacja:active {
+  transform: translateY(-0.6rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
+}
+.macy img {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.macy img:hover {
+  box-shadow: 0 1rem 3rem rgb(66, 66, 66);
+  opacity: 90%;
+  transform: scale(1.05);
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
